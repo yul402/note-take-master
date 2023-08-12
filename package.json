@@ -1,0 +1,21 @@
+{
+  "name": "note-take-master",
+  "version": "1.0.0",
+  "description": "An web application to take and save note.",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yul402/note-take-master.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yul402/note-take-master/issues"
+  },
+  "homepage": "https://github.com/yul402/note-take-master#readme"
+}
