@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "An web application to take and save note.",
   "main": "server.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -17,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/yul402/note-take-master/issues"
   },
-  "homepage": "https://github.com/yul402/note-take-master#readme"
+  "homepage": "https://github.com/yul402/note-take-master#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "uuid": "^9.0.0"
+  }
 }

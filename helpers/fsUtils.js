@@ -26,6 +26,7 @@ const readAndAppend = (content, file) => {
 
 // Delete note from file
 const deleteFromFile = (file,id)=>{
+  console.log(id)
     fs.readFile(file, 'utf8', (err, data) => {
         if (err) {
             console.error(err);

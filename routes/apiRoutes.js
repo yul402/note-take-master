@@ -37,7 +37,7 @@ router.post('/notes', (req, res) => {
 
 // Bonus - DELETE request
 router.delete('/notes/:id', function (req, res) {
-    fsUtils.deleteFromFile('db/db.json',req.params.id,)
+    fsUtils.deleteFromFile('db/db.json',req.params.id)
     fsUtils.readFromFile('db/db.json').then((data) => res.json(JSON.parse(data)))
 });
 
