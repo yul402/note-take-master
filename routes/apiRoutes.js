@@ -10,15 +10,12 @@ router.get('/notes', function (req, res) {
 
 // POST request
 router.post('/notes', (req, res) => {
-    // fsUtils
-    //     .addNote(req.body)
-    //     .then((note) => res.json(note))
-    //     .catch(err => res.status(500).json(err));
+
     const {title,text} = req.body;
 
-    // If all the required properties are present
+    // Check if all the required properties are present
     if (title && text) {
-      // Variable for the object we will save
+      // Save new notes
         const newNote = {
         title,
         text,
@@ -42,11 +39,6 @@ router.post('/notes', (req, res) => {
 router.delete('/notes/:id', function (req, res) {
     fsUtils.deleteFromFile('db/db.json',req.params.id,)
     fsUtils.readFromFile('db/db.json').then((data) => res.json(JSON.parse(data)))
-
-    // fsUtils
-    //     .deleteNote(req.params.id)
-    //     .then(() => res.json({ ok: true }))
-    //     .catch(err => res.status(500).json(err));
 });
 
 
